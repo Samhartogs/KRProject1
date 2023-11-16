@@ -1,0 +1,323 @@
+Prefix: : <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4>
+
+
+ObjectProperty: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient>
+
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only 
+            (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>),
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> exactly 3 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Beef>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only 
+            (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>),
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> exactly 5 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>,
+         inverse (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient>) only <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only 
+            (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>),
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> exactly 4 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>,
+         inverse (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient>) only <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only 
+            (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>),
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> exactly 3 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Dairy_Sushi>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+         and (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>)
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Interesting_Sushi>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> min 5 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Lamb>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+         and (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>)
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only 
+            (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon>),
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> exactly 5 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>,
+         inverse (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient>) only <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Shrimp>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Simple_Sushi>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> max 3 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only 
+            (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato>),
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> exactly 5 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Tuna>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+         and (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegan_Sushi>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+         and (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient>)
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+         and (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegetarian_Sushi>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+         and (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient>)
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>
+    
+    
+Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> some <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame>,
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> only 
+            (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> or <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame>),
+        <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> exactly 4 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>
+    
+    
