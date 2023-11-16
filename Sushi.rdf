@@ -1,0 +1,793 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4/"
+     xml:base="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Beef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Beef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Dairy_Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Dairy_Sushi">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Interesting_Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Interesting_Sushi">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Lamb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Lamb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Shrimp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Shrimp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Simple_Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Simple_Sushi">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Tuna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Tuna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegan_Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegan_Sushi">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegetarian_Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegetarian_Sushi">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
