@@ -36,6 +36,7 @@ gateway.convertToBinaryConjunctions(ontology)
 # get the TBox axioms
 tbox = ontology.tbox()
 axioms = tbox.getAxioms()
+changed = False
 
 
 print("These are the axioms in the TBox:")
@@ -50,27 +51,42 @@ conceptNames = ontology.getConceptNames()
 print("These are the concept names: ")
 print([formatter.format(x) for x in conceptNames])
 test = elFactory.getConceptName(classname)
-print(f"According to our reasoner, {test} has the following subsumers: ")
 
-#subsumers = ELreasoner(test)
+
+def conjunction1(concept):
+    conceptType = concept.getClass().getSimpleName()
+    if conceptType == "ConceptConjunction":
+        for conjunct in concept.getConjuncts():
+            concept.append(conjunct)
+    changed = True
+    return concept
+
 def rules(concept):
-    Trule(concept)
-    conjunction1(concept)
-    conjunction2(concept)
-    existential1(concept)
-    existential2(concept)
-    subsume(concept)
+    #Trule(concept)
+    concept.append(conjunction1(concept))
+    #concept.append(conjunction2(concept))
+    #existential1(concept)
+    #existential2(concept)
+    #subsume(concept)
 
 def ELreasoner(classname):
+    subsumer = []
     for concept in conceptNames:
-        elements = [d]
         d = [classname]
+        elements = [d]
         changed = True
         while changed == True:
             changed = False
             for e in elements:
                 for _ in e:
                     rules(_)
+        if concept in d:
+            subsumer.append(concept)
+    return subsumer
+
+subsumers = []
+subsumers.append(ELreasoner(test))
+print(f"According to our reasoner, {test} has the following subsumers: {subsumers}")
 
 
 

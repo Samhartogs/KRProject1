@@ -14,7 +14,7 @@ formatter = gateway.getSimpleDLFormatter()
 print("Loading the ontology...")
 
 # load an ontology from a file
-ontology = parser.parseFile("pizza.owl")
+ontology = parser.parseFile("SushiOntology.omn")
 
 print("Loaded the ontology!")
 
