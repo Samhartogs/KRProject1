@@ -63,7 +63,7 @@ def conjunction1(concept):
 
 def rules(concept):
     #Trule(concept)
-    concept.append(conjunction1(concept))
+    conjunction1(concept)
     #concept.append(conjunction2(concept))
     #existential1(concept)
     #existential2(concept)
@@ -84,9 +84,10 @@ def ELreasoner(classname):
             subsumer.append(concept)
     return subsumer
 
-subsumers = []
-subsumers.append(ELreasoner(test))
-print(f"According to our reasoner, {test} has the following subsumers: {subsumers}")
+subsumers = ELreasoner(test)
+print(f"According to our reasoner, {test} has the following subsumers: ")
+for concept in subsumers:
+    print(formatter.format(concept))
 
 
 
