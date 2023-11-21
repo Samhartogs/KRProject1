@@ -2,15 +2,16 @@
 import sys
 from py4j.java_gateway import JavaGateway
 
+# connect to the java gateway of dl4python
+gateway = JavaGateway()
+elFactory = gateway.getELFactory()
+
 # Check for command line input
 if len(sys.argv) != 3:
     raise ValueError("The input should be in the form of PROGRAMM_NAME ONTOLOGY_FILE CLASS_NAME")
 else:
     ontologyfile = sys.argv[1]
-    classname = sys.argv[2]
-
-# connect to the java gateway of dl4python
-gateway = JavaGateway()
+    classname = elFactory.getConceptName(sys.argv[2])
 
 # get a parser from OWL files to DL ontologies
 parser = gateway.getOWLParser()
@@ -43,6 +44,7 @@ gci = []
 equiv = []
 print("These are the axioms in the TBox:")
 for axiom in axioms:
+    print(formatter.format(axiom))
     axiomType = axiom.getClass().getSimpleName()
     if axiomType == "GeneralConceptInclusion":
         gci.append(axiom)
@@ -57,12 +59,11 @@ for axiom in axioms:
 
 
 # get all concepts occurring in the ontology
-elFactory = gateway.getELFactory()
+
 allConcepts = ontology.getSubConcepts()
 conceptNames = ontology.getConceptNames()
 print("These are the concept names: ")
 print([formatter.format(x) for x in conceptNames])
-test = elFactory.getConceptName(classname)
 
 class reasoner:
     def __init__(self):
@@ -111,8 +112,10 @@ class reasoner:
                     return elements
                 
             d = self.Element(name=f"D:{self.counter}", list=[], connections=[])
+            self.counter += 1
             e.connections.append(d)
             d.list.append(concept.filler())
+            d.list.append(elFactory.getTop())
             elements.append(d)
             self.changed = True
         return elements
@@ -134,7 +137,6 @@ class reasoner:
 
 
     def rules(self, concept, e, elements):
-        #Trule(concept)
         self.subsume(concept, e)
         self.conjunction1(concept, e)
         self.conjunction2(concept, e)
@@ -158,6 +160,7 @@ class reasoner:
         for concept in conceptNames:
             d = self.Element(name=classname, list=[], connections=[])
             d.list.append(classname)
+            d.list.append(elFactory.getTop())
             self.elements = [d]
             self.changed = True
             while self.changed == True:
@@ -171,8 +174,8 @@ class reasoner:
         return subsumer
 
 subsumers = reasoner()
-result = subsumers.ELreasoner(test)
-print(f"According to our reasoner, {test} has the following subsumers: ")
+result = subsumers.ELreasoner(classname)
+print(f"According to our reasoner, {classname} has the following {len(result)} subsumers: ")
 for concept in result:
     print(" - ", formatter.format(concept))
 

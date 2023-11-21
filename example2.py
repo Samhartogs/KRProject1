@@ -14,7 +14,7 @@ formatter = gateway.getSimpleDLFormatter()
 print("Loading the ontology...")
 
 # load an ontology from a file
-ontology = parser.parseFile("Sushi.rdf")
+ontology = parser.parseFile("pizza.owl")
 
 print("Loaded the ontology!")
 
@@ -141,7 +141,7 @@ print(formatter.format(gci))
 elk = gateway.getELKReasoner()
 hermit = gateway.getHermiTReasoner() # might the upper case T!
 
-margherita = elFactory.getConceptName('California_Roll')
+margherita = elFactory.getConceptName('"Margherita"')
 
 print()
 print("I am first testing ELK.")
@@ -149,7 +149,7 @@ elk.setOntology(ontology)
 print()
 print("According to ELK, Margherita has the following subsumers: ")
 subsumers = elk.getSubsumers(margherita)
-for concept in subsumers.toArray():
+for concept in subsumers:
     print(" - ",formatter.format(concept))
 print("(",len(subsumers)," in total)")
 print()

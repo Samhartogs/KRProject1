@@ -1,0 +1,255 @@
+Prefix(:=<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4>
+
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Beef>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Dairy_Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Interesting_Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Lamb>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Shrimp>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Simple_Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Tuna>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegan_Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegetarian_Sushi>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame>))
+Declaration(Class(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient>))
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado_Roll> ObjectExactCardinality(3 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Beef> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Beef>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Beef> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#California_Roll> ObjectExactCardinality(5 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken> ObjectAllValuesFrom(ObjectInverseOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient>) <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Chicken_Roll> ObjectExactCardinality(4 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Crab> ObjectAllValuesFrom(ObjectInverseOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient>) <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber_Roll> ObjectExactCardinality(3 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Dairy_Sushi> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Dairy_Sushi>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Dairy_Sushi> ObjectIntersectionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Dairy_Sushi> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Interesting_Sushi> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Interesting_Sushi>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Interesting_Sushi> ObjectMinCardinality(5 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Interesting_Sushi> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Lamb> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Lamb>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Lamb> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi> ObjectIntersectionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#MeatIngredient>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Meat_Sushi> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Cucumber> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Philadelphia_Roll> ObjectExactCardinality(5 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Salmon> ObjectAllValuesFrom(ObjectInverseOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient>) <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Fish_Sushi>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Shrimp> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Shrimp>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Shrimp> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Simple_Sushi> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Simple_Sushi>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Simple_Sushi> ObjectMaxCardinality(3 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Simple_Sushi> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Mayonaise> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sweet_Potato_Roll> ObjectExactCardinality(5 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Tuna> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Tuna>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Tuna> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#FishIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient> ObjectIntersectionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegan_Sushi> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegan_Sushi>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegan_Sushi> ObjectIntersectionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VeganIngredient>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegan_Sushi> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient> ObjectIntersectionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#DairyIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegetarian_Sushi> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegetarian_Sushi>)
+
+EquivalentClasses(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegetarian_Sushi> ObjectIntersectionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetarianIngredient>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Vegetarian_Sushi> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Sushi>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#VegetableIngredient>)
+
+# Class: <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam> (<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam>)
+
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Named_Sushi>)
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam> ObjectSomeValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame>))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam> ObjectAllValuesFrom(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> ObjectUnionOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Avocado> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Nori> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Rice> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame>)))
+SubClassOf(<http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Wakame_Gunkam> ObjectExactCardinality(4 <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#hasIngredient> <http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4#Ingredient>))
+
+
+)

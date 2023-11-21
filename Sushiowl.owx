@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/samha/ontologies/2023/10/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Avocado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avocado_Roll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#California_Roll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chicken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chicken_Roll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cucumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cucumber_Roll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DairyIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dairy_Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FishIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish_Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interesting_Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mayonaise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeatIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meat_Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Named_Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nori"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Philadelphia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Philadelphia_Roll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salmon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shrimp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simple_Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweet_Potato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweet_Potato_Roll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tuna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeganIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegan_Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetableIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetarianIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetarian_Sushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wakame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wakame_Gunkam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Dairy_Sushi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Sushi"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Class IRI="#DairyIngredient"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fish_Sushi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#FishIngredient"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Interesting_Sushi"/>
+        <ObjectMinCardinality cardinality="5">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Meat_Sushi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Sushi"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Class IRI="#MeatIngredient"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Simple_Sushi"/>
+        <ObjectMaxCardinality cardinality="3">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VeganIngredient"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Ingredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#Rice"/>
+                <Class IRI="#VegetableIngredient"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vegan_Sushi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Sushi"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Class IRI="#VeganIngredient"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VegetarianIngredient"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Ingredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#DairyIngredient"/>
+                <Class IRI="#Rice"/>
+                <Class IRI="#VegetableIngredient"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vegetarian_Sushi"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Sushi"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Class IRI="#VegetarianIngredient"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Avocado"/>
+        <Class IRI="#VegetableIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avocado_Roll"/>
+        <Class IRI="#Named_Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avocado_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Avocado"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avocado_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Nori"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avocado_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Rice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avocado_Roll"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#Avocado"/>
+                <Class IRI="#Nori"/>
+                <Class IRI="#Rice"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avocado_Roll"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beef"/>
+        <Class IRI="#MeatIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Roll"/>
+        <Class IRI="#Named_Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Avocado"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Crab"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Mayonaise"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Nori"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Rice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Roll"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#Avocado"/>
+                <Class IRI="#Crab"/>
+                <Class IRI="#Mayonaise"/>
+                <Class IRI="#Nori"/>
+                <Class IRI="#Rice"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#California_Roll"/>
+        <ObjectExactCardinality cardinality="5">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <Class IRI="#MeatIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken"/>
+        <ObjectAllValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasIngredient"/>
+            </ObjectInverseOf>
+            <Class IRI="#Meat_Sushi"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken_Roll"/>
+        <Class IRI="#Named_Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Chicken"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Cucumber"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Nori"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Rice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken_Roll"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#Chicken"/>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Nori"/>
+                <Class IRI="#Rice"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chicken_Roll"/>
+        <ObjectExactCardinality cardinality="4">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crab"/>
+        <Class IRI="#FishIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crab"/>
+        <ObjectAllValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasIngredient"/>
+            </ObjectInverseOf>
+            <Class IRI="#Fish_Sushi"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber"/>
+        <Class IRI="#VegetableIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber_Roll"/>
+        <Class IRI="#Named_Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Cucumber"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Nori"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Rice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber_Roll"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Nori"/>
+                <Class IRI="#Rice"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cucumber_Roll"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DairyIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dairy_Sushi"/>
+        <Class IRI="#Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FishIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish_Sushi"/>
+        <Class IRI="#Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interesting_Sushi"/>
+        <Class IRI="#Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lamb"/>
+        <Class IRI="#MeatIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mayonaise"/>
+        <Class IRI="#DairyIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeatIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meat_Sushi"/>
+        <Class IRI="#Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Named_Sushi"/>
+        <Class IRI="#Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nori"/>
+        <Class IRI="#VegetableIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia"/>
+        <Class IRI="#DairyIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia_Roll"/>
+        <Class IRI="#Named_Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Cucumber"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Nori"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Philadelphia"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Rice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Salmon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia_Roll"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#Cucumber"/>
+                <Class IRI="#Nori"/>
+                <Class IRI="#Philadelphia"/>
+                <Class IRI="#Rice"/>
+                <Class IRI="#Salmon"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philadelphia_Roll"/>
+        <ObjectExactCardinality cardinality="5">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rice"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salmon"/>
+        <Class IRI="#FishIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salmon"/>
+        <ObjectAllValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasIngredient"/>
+            </ObjectInverseOf>
+            <Class IRI="#Fish_Sushi"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shrimp"/>
+        <Class IRI="#FishIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simple_Sushi"/>
+        <Class IRI="#Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato"/>
+        <Class IRI="#VegetableIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato_Roll"/>
+        <Class IRI="#Named_Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Avocado"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Mayonaise"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Nori"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Rice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato_Roll"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Sweet_Potato"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato_Roll"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#Avocado"/>
+                <Class IRI="#Mayonaise"/>
+                <Class IRI="#Nori"/>
+                <Class IRI="#Rice"/>
+                <Class IRI="#Sweet_Potato"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweet_Potato_Roll"/>
+        <ObjectExactCardinality cardinality="5">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tuna"/>
+        <Class IRI="#FishIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeganIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegan_Sushi"/>
+        <Class IRI="#Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetableIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetarianIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetarian_Sushi"/>
+        <Class IRI="#Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wakame"/>
+        <Class IRI="#VegetableIngredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wakame_Gunkam"/>
+        <Class IRI="#Named_Sushi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wakame_Gunkam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Avocado"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wakame_Gunkam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Nori"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wakame_Gunkam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Rice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wakame_Gunkam"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Wakame"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wakame_Gunkam"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <ObjectUnionOf>
+                <Class IRI="#Avocado"/>
+                <Class IRI="#Nori"/>
+                <Class IRI="#Rice"/>
+                <Class IRI="#Wakame"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wakame_Gunkam"/>
+        <ObjectExactCardinality cardinality="4">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
